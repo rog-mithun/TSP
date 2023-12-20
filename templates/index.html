@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Traveling Salesman Optimization</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        #bike {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-image: url('bike.png'); /* Replace with the path to your bike image */
+            background-size: cover;
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Traveling Salesman Optimization</h1>
+    </div>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <div id="sidebar">
+        <h2>Select Start and End Cities:</h2>
+        <label for="start-city">Start City:</label>
+        <select id="start-city"></select>
+        <button onclick="calculateOptimalPath()">Calculate Optimal Path</button>
+        <div>
+            <h2>Optimal Path:</h2>
+            <p id="optimal-path"></p>
+            <h2>Total Distance</h2>
+            <p id="total-distance"></p>
+        </div>
+    </div>
+    <div id="bike"></div> <!-- Add the bike element here -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
