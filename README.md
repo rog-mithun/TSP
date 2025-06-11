@@ -66,10 +66,10 @@ A full-stack web application that solves the **Traveling Salesman Problem (TSP)*
 
 ## 📸 Screenshots
 
-- [Sample Input](Screenshot(8))
-- [UI](Screenshot(9))
-- [Optimal](Screenshot(10))
-- [Output](Screenshot(11))
+- ![Sample Input](Screenshot(8))
+- ![UI](Screenshot(9))
+- ![Optimal](Screenshot(10))
+- ![Output](Screenshot(11))
 
 ---
 
